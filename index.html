@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#6285a9">
+    <meta name="viewport" content="width=device-width">
     <title>Robert James</title>
     <style>
       :root {
@@ -17,202 +19,174 @@
         }
 
         * {
-        box-sizing: border-box;
-        margin-top: 1em;
+            box-sizing: border-box;
+            margin-top: 1em;
         }
-
         body {
-        line-height: 1.4;
-        color: var(--font-color);
-        font-family: var(--font-stack--1);
-        font-size: var(--font-size);
-        letter-spacing: .01em;
-        padding: .1em .3em;
-        height: 100%;
+            line-height: 1.4;
+            color: var(--font-color);
+            font-family: var(--font-stack--1);
+            font-size: var(--font-size);
+            letter-spacing: .01em;
+            padding: .1em .3em;
+            height: 100%;
         }
         @media (min-width: 500px) {
-        body {
-            font-size: 14px;
+            body { font-size: 14px; }
         }
-        }
-
-        header {
-        text-align: center;
-        }
-
+        header { text-align: center; }
         h1 a {
-        color: var(--font-color);
-        text-decoration: none;
-        text-shadow: 0 0 1px var(--text-shadow);
+            color: var(--font-color);
+            text-decoration: none;
+            text-shadow: 0 0 1px var(--text-shadow);
         }
-
         nav,
         main {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-        margin: 1em;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            margin: 1em;
         }
-
         main {
-        -webkit-transition: all 3s;
-        transition: all 3s;
+            -webkit-transition: all 3s;
+            transition: all 3s;
         }
-        main ul {
-        padding-left: 0;
-        }
-        main li {
-        list-style: none;
-        }
-        main li a {
-        text-decoration: none;
-        }
-
+        main ul { padding-left: 0; }
+        main li { list-style: none; }
+        main li a { text-decoration: none; }
         main > *:not(:target) {
-        -webkit-transition: all 3s;
-        transition: all 3s;
-        display: none;
-        opacity: 0;
+            -webkit-transition: all 3s;
+            transition: all 3s;
+            display: none;
+            opacity: 0;
         }
 
-        a {
-        color: var(--color-link);
-        }
+        a { color: var(--color-link); }
 
         a:target,
         p:first-letter {
-        font-weight: 600;
-        font-size: 133%;
-        padding-left: .5em;
-        padding-right: .01em;
-        letter-spacing: .02em;
+            font-weight: 600;
+            font-size: 133%;
+            padding-left: .5em;
+            padding-right: .01em;
+            letter-spacing: .02em;
         }
-
-        .index {
-        display: none;
-        }
-
+        .index { display: none; }
         .block {
-        position: relative;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 1 3em;
-            -ms-flex: 0 1 3em;
-                flex: 0 1 3em;
-        margin: 2.25em;
-        padding: 1.5em 2.5em;
-        background: #5eabed;
-        color: #fff;
-        text-decoration: none;
-        box-shadow: 0 0 2px slategrey;
+            position: relative;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 3em;
+                -ms-flex: 0 1 3em;
+                    flex: 0 1 3em;
+            margin: 2.25em;
+            padding: 1.5em 2.5em;
+            background: #5eabed;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 0 2px slategrey;
         }
         .block:after {
-        content: '';
-        position: absolute;
-        -webkit-transform: translate(-40%, -10%);
-                transform: translate(-40%, -10%);
-        padding: 2.3em 3.3em;
-        mix-blend-mode: lighten;
-        background: rgba(231, 132, 19, 0.15);
-        -webkit-transition: all var(--link-ease) var(--link-timing);
-        transition: all var(--link-ease) var(--link-timing);
+            content: '';
+            position: absolute;
+            -webkit-transform: translate(-40%, -10%);
+                    transform: translate(-40%, -10%);
+            padding: 2.3em 3.3em;
+            mix-blend-mode: lighten;
+            background: rgba(231, 132, 19, 0.15);
+            -webkit-transition: all var(--link-ease) var(--link-timing);
+            transition: all var(--link-ease) var(--link-timing);
         }
         .block:hover:after {
-        -webkit-transform: translate(-110%, -60%);
-                transform: translate(-110%, -60%);
+            -webkit-transform: translate(-110%, -60%);
+                    transform: translate(-110%, -60%);
         }
         .block:before {
-        content: '';
-        position: absolute;
-        -webkit-transform: translate(-55%, -55%);
-                transform: translate(-55%, -55%);
-        padding: 2.3em 3.3em;
-        mix-blend-mode: lighten;
-        background: rgba(103, 183, 224, 0.15);
-        -webkit-transition: all var(--link-ease) var(--link-timing);
-        transition: all var(--link-ease) var(--link-timing);
+            content: '';
+            position: absolute;
+            -webkit-transform: translate(-55%, -55%);
+                    transform: translate(-55%, -55%);
+            padding: 2.3em 3.3em;
+            mix-blend-mode: lighten;
+            background: rgba(103, 183, 224, 0.15);
+            -webkit-transition: all var(--link-ease) var(--link-timing);
+            transition: all var(--link-ease) var(--link-timing);
         }
         .block:hover:before {
-        -webkit-transform: translate(10%, 10%);
-                transform: translate(10%, 10%);
+            -webkit-transform: translate(10%, 10%);
+                    transform: translate(10%, 10%);
         }
-
         .footer-menu {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-        max-width: 75vw;
-        margin: 1em auto 1em;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            max-width: 75vw;
+            margin: 1em auto 1em;
         }
-
         .footer-menu--item {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
         }
-
         .footer-menu--item a {
-        padding: .8em;
-        fill: var(--color-link);
-        -webkit-filter: drop-shadow(0.33px 0.33px 0.66px red);
-                filter: drop-shadow(0.33px 0.33px 0.66px red);
-        -webkit-transition: fill 330ms;
-        transition: fill 330ms;
+            padding: .8em;
+            fill: var(--color-link);
+            -webkit-filter: drop-shadow(0.33px 0.33px 0.66px red);
+                    filter: drop-shadow(0.33px 0.33px 0.66px red);
+            -webkit-transition: fill 330ms;
+            transition: fill 330ms;
         }
         .footer-menu--item a.twitter:hover {
-        fill: #1ca0f2;
-        -webkit-filter: drop-shadow(1px 1px 1px #777);
-                filter: drop-shadow(1px 1px 1px #777);
+            fill: #1ca0f2;
+            -webkit-filter: drop-shadow(1px 1px 1px #777);
+                    filter: drop-shadow(1px 1px 1px #777);
         }
         .footer-menu--item a.linkedIn:hover {
         fill: #0070a8;
-        -webkit-filter: drop-shadow(1px 1px 1px #777);
-                filter: drop-shadow(1px 1px 1px #777);
+            -webkit-filter: drop-shadow(1px 1px 1px #777);
+                    filter: drop-shadow(1px 1px 1px #777);
         }
         .footer-menu--item a.github:hover {
-        fill: #333333;
-        -webkit-filter: drop-shadow(1px 1px 1px #777);
-                filter: drop-shadow(1px 1px 1px #777);
+            fill: #333333;
+            -webkit-filter: drop-shadow(1px 1px 1px #777);
+                    filter: drop-shadow(1px 1px 1px #777);
         }
         .footer-menu--item a.email:hover {
-        fill: #fb805b;
-        -webkit-filter: drop-shadow(1px 1px 1px #777);
-                filter: drop-shadow(1px 1px 1px #777);
+            fill: #fb805b;
+            -webkit-filter: drop-shadow(1px 1px 1px #777);
+                    filter: drop-shadow(1px 1px 1px #777);
         }
-
         #about:target {
-        opacity: 1;
-        max-width: 20em;
+            opacity: 1;
+            max-width: 20em;
         }
     </style>  
   </head>
-  <body translate="no" >
-
-    
+<body>
 <svg class="index">
   <symbol id="twitter">
     <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39   4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path>
